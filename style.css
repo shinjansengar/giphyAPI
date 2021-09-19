@@ -1,0 +1,17 @@
+#main{
+    margin-top: 5%;
+    text-align: center;
+    height: 1200px;  
+}
+h1{
+    font-size: 60px;
+}
+p{
+    font-size: 25px;
+}
+input{
+    font-size: 15px;
+}
+body{
+    background-image: linear-gradient(skyblue, white);
+}

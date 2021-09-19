@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="sendApiTrendingRequest()">
+    <div id="main">
+        <h1>Giphy API Results</h1>
+        <p>Type something for it's gif</p>
+        <div id="search" class="search">
+            <input id="searchbar" type="text" placeholder="Ex. Dogs,Cats,Bhidu "/>
+            <input id="submit" type="button" value="Search" onclick="sendApiSearchRequest()">
+        </div>
+        <br>
+        <br>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
