@@ -1,13 +1,23 @@
 #main{
     margin-top: 5%;
     text-align: center;
-    height: 1200px;  
+    height:1200px; 
 }
 h1{
     font-size: 60px;
 }
 p{
     font-size: 25px;
+}
+.search{
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
+}
+#invalid{
+    font-size: 15px;
+    color: red;
+    text-align: left;
 }
 input{
     font-size: 15px;
