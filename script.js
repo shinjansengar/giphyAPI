@@ -6,15 +6,15 @@ async function sendApiSearchRequest(){
     
     const response = await fetch(apiUrl);
     const json = await response.json();
-    console.log(json);
+    var data = json.data;
     
     var newDiv = document.createElement('div');
-    for(var i=0;i<20;i=i+1){
-        var imgPath= json.data[i].images.fixed_height.url;
+    data.forEach(element => {
+        var imgPath= element.images.fixed_height.url;
         var img = document.createElement('img');
         img.setAttribute("src",imgPath);
         newDiv.appendChild(img);
-    }   
+    });
     document.getElementById('result').innerHTML=newDiv.innerHTML;    
 
 }
@@ -25,15 +25,15 @@ async function sendApiTrendingRequest(){
 
     const response = await fetch(apiUrl);
     const json = await response.json();
-    console.log(json);
+    var data = json.data;
     
     var newDiv = document.createElement('div');
-    for(var i=0;i<25;i=i+1){
-        var imgPath= json.data[i].images.fixed_height.url;
+    data.forEach(element => {
+        var imgPath= element.images.fixed_height.url;
         var img = document.createElement('img');
         img.setAttribute("src",imgPath);
         newDiv.appendChild(img);
-    }   
+    });
     document.getElementById('result').innerHTML=newDiv.innerHTML;
 }
 
