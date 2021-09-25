@@ -57,3 +57,10 @@ document.getElementById("searchbar")
     }
 });
 
+setTimeout(function(){
+    document.querySelectorAll('.gifs').forEach(function(item){
+        item.addEventListener('click', function(event){
+            navigator.clipboard.writeText(item.src);
+        })
+    })
+ }, 2000);
